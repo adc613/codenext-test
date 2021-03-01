@@ -45,14 +45,12 @@ class TodoList extends React.Component {
   }
 }
 
-class Todo extends React.Component {
-  render() { 
-    return (
-      <p>
-        {this.props.text}
-      </p>
-    );
-  }
+function Todo(props) {
+  return (
+    <p>
+      {props.text}
+    </p>
+  );
 }
 
 class TodoForm extends React.Component {
